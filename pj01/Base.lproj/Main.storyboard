@@ -29,7 +29,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="4WZ-iz-dpx"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="關於" id="ypE-FO-G1Z"/>
+                    <tabBarItem key="tabBarItem" title="關於" image="SafariGlyph" selectedImage="SafariGlyph" id="ypE-FO-G1Z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xQC-BY-YzF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,7 +45,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="umk-nD-wOF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="查詢" id="oV6-i2-tPP"/>
+                    <tabBarItem key="tabBarItem" title="查詢" image="BookmarksListFolder" selectedImage="BookmarksListFolder" id="oV6-i2-tPP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhv-sH-9xZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,39 +60,75 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="金額：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USc-Ud-ESY">
-                                <rect key="frame" x="115" y="188" width="53" height="21"/>
+                                <rect key="frame" x="50" y="184" width="53" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YTQ-uX-BsQ">
+                                <rect key="frame" x="134" y="179" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="ＸＸＸ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KeN-t1-iAY">
+                                <rect key="frame" x="121" y="303" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Adi-wM-wth">
+                                <rect key="frame" x="134" y="233" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KWf-wi-ycT">
+                                <rect key="frame" x="76" y="78" width="121" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="收入"/>
+                                    <segment title="支出"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="日期：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6i-Qu-xxQ">
+                                <rect key="frame" x="50" y="238" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 說明：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szk-9Z-Y7F">
+                                <rect key="frame" x="50" y="303" width="63" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahR-Fu-pDo">
-                                <rect key="frame" x="118" y="297" width="46" height="30"/>
+                                <rect key="frame" x="121" y="473" width="67" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="存檔"/>
                                 <connections>
                                     <action selector="btnSave:" destination="Bz4-6S-m5R" eventType="touchDown" id="KzC-8a-bY8"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YTQ-uX-BsQ">
-                                <rect key="frame" x="176" y="183" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="UGU-Du-1ye"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="記帳" id="pZ5-e3-kt1"/>
+                    <tabBarItem key="tabBarItem" title="記帳" image="BookmarksListFavoritesFolder" selectedImage="BookmarksListFavoritesFolder" id="pZ5-e3-kt1"/>
                     <connections>
                         <outlet property="txtMoney" destination="YTQ-uX-BsQ" id="5Fe-3t-umv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G65-LW-VAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862" y="-442"/>
+            <point key="canvasLocation" x="861.60000000000002" y="-442.12893553223392"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="VkQ-lh-jzs">
@@ -114,4 +150,9 @@
             <point key="canvasLocation" x="1161" y="-1656"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BookmarksListFavoritesFolder" width="21" height="20"/>
+        <image name="BookmarksListFolder" width="31" height="27"/>
+        <image name="SafariGlyph" width="33" height="33"/>
+    </resources>
 </document>
