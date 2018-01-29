@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bz4-6S-m5R">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mRH-6e-nhK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -34,22 +34,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xQC-BY-YzF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="49" y="-442"/>
-        </scene>
-        <!--查詢-->
-        <scene sceneID="Jbh-cN-Ru8">
-            <objects>
-                <viewController title="查詢" id="idg-O3-o78" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RPE-Je-Qkc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="umk-nD-wOF"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="查詢" image="BookmarksListFolder" selectedImage="BookmarksListFolder" id="oV6-i2-tPP"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xhv-sH-9xZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1754" y="-442"/>
         </scene>
         <!--記帳-->
         <scene sceneID="Sj6-fA-ih4">
@@ -148,12 +132,57 @@
                     <connections>
                         <segue destination="9pM-Nn-eyd" kind="relationship" relationship="viewControllers" id="9Ia-cr-dzp"/>
                         <segue destination="Bz4-6S-m5R" kind="relationship" relationship="viewControllers" id="tT8-Tg-Jb3"/>
-                        <segue destination="idg-O3-o78" kind="relationship" relationship="viewControllers" id="FEo-28-fEJ"/>
+                        <segue destination="5sF-n8-SEn" kind="relationship" relationship="viewControllers" id="ui3-RX-rFq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VrV-0i-dwU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1161" y="-1656"/>
+        </scene>
+        <!--查詢-->
+        <scene sceneID="Uzb-OV-mKq">
+            <objects>
+                <tableViewController id="5sF-n8-SEn" customClass="queryTableViewController" customModule="pj01" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uDW-QA-HOZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="100" id="a21-kA-hFb">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a21-kA-hFb" id="0S0-vz-B6s">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUh-Ii-RPQ">
+                                            <rect key="frame" x="166" y="0.0" width="72" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b48-2v-Jrg">
+                                            <rect key="frame" x="166" y="45" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5sF-n8-SEn" id="q0h-Z4-4yg"/>
+                            <outlet property="delegate" destination="5sF-n8-SEn" id="GzT-SZ-dAf"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="查詢" image="BookmarksListFolder" selectedImage="BookmarksListFolder" id="e5d-cd-Vlr"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nWc-kQ-blQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757.5999999999999" y="-442.12893553223392"/>
         </scene>
     </scenes>
     <resources>

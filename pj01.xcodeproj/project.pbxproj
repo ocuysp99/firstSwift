@@ -19,6 +19,7 @@
 		0ADAA6652017094D00CA8A81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ADAA6642017094D00CA8A81 /* Assets.xcassets */; };
 		0ADAA6682017094D00CA8A81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADAA6662017094D00CA8A81 /* LaunchScreen.storyboard */; };
 		0ADAA670201720B600CA8A81 /* recordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADAA66F201720B600CA8A81 /* recordViewController.swift */; };
+		0AF619C32018708D003C7473 /* queryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF619C22018708D003C7473 /* queryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0ADAA6672017094D00CA8A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0ADAA6692017094D00CA8A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ADAA66F201720B600CA8A81 /* recordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recordViewController.swift; sourceTree = "<group>"; };
+		0AF619C22018708D003C7473 /* queryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = queryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				0ADAA6662017094D00CA8A81 /* LaunchScreen.storyboard */,
 				0ADAA6692017094D00CA8A81 /* Info.plist */,
 				0ADAA66F201720B600CA8A81 /* recordViewController.swift */,
+				0AF619C22018708D003C7473 /* queryTableViewController.swift */,
 			);
 			path = pj01;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				0ADAA6602017094D00CA8A81 /* ViewController.swift in Sources */,
 				0ADAA65E2017094D00CA8A81 /* AppDelegate.swift in Sources */,
+				0AF619C32018708D003C7473 /* queryTableViewController.swift in Sources */,
 				0ADAA670201720B600CA8A81 /* recordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
